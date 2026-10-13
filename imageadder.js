@@ -1,21 +1,20 @@
-const images = ["sticker1.webp", "anotherimage.webp"];
-let i=0
-function addImage(x,y) {
+const images = ["hello.png", "uspslabel.png", "usps2.jpeg", "usps3.webp", "andre.png", 
+    "andre2.png", "subvertising.png", "nyfuckery.png", "iceout.png", "sesmanhattan.png", "LM.png"];
+let i = 0;
 
-const nextimage = images[i];
+function addImage(x, y) {
+    const nextImage = images[i];
 
-const img = document.createElement("img");
-img.setAttribute("src", nextimage);
-img.style.left = x + "px";
-img.style.top = y + "px";
+    const img = document.createElement("img");
+    img.src = nextImage;
+    img.style.left = x + "px";
+    img.style.top = y + "px";
 
-document.body.appendChild(img);
-i = i + 1
-if (i >= images.length) { i=0
+    document.body.appendChild(img);
+
+    i = (i + 1) % images.length;
 }
 
-document.addEventListener("touchend", function(event) {
-    event.preventDefault();
-    placeimage(event.pageX, event.pageY);
-
-) } 
+document.addEventListener("pointerup", function(event) {
+    addImage(event.pageX, event.pageY);
+});

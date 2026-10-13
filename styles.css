@@ -15,3 +15,9 @@ top: 30px;
 left: 40px; 
 z-index: 1;
 }
+img {
+    position: absolute;
+    width: 500px;  /* Make stickers smaller */
+    height: auto;
+    pointer-events: none;
+}
