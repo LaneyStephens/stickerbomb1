@@ -18,4 +18,4 @@ document.addEventListener("touchend", function(event) {
     event.preventDefault();
     placeimage(event.pageX, event.pageY);
 
-)}
+) } 
