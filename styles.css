@@ -1,0 +1,17 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 32px;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #013f31; 
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+header {
+position: fixed;
+top: 30px;
+left: 40px; 
+z-index: 1;
+}
