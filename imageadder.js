@@ -1,6 +1,6 @@
 const images = ["hello.png", "uspslabel.png", "usps2.jpeg", "usps3.webp", "andre.png", 
     "andre2.png", "subvertising.png", "nyfuckery.png", "iceout.png", "sesmanhattan.png", 
-    "LM.png","blueguy.png", "pridesticker.png" "zohransticker.png"];
+    "LM.png", "blueguy.png", "pridesticker.png", "zohransticker.png"];
 let i = 0;
 
 function addImage(x, y) {
